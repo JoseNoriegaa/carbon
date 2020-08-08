@@ -33,7 +33,7 @@
 
 ## Introducción
 
-¿Conoces [todas](https://twitter.com/dan_abramov/status/890191815567175680) [de](https://twitter.com/reactjs/status/890511993261654017) [esas](https://twitter.com/notquiteleo/status/873483329345028096) [capturas de pantalla](https://twitter.com/zeithq/status/805779711154647040) que ves en Twitter? Aunque el código es generalmente impresionante, vimos la posibilidad de mejorarlo en el departamento de estética. Carbon hace que sea fácil crear y compartir bellas imágenes de su código. ¿Entonces, qué esperas? Ve a impresionar a todos tus seguidores con tu nueva destreza de diseño.
+¿Conoces [todas](https://twitter.com/dan_abramov/status/890191815567175680) [esas](https://twitter.com/notquiteleo/status/873483329345028096) [capturas de pantalla](https://twitter.com/zeithq/status/805779711154647040) que ves en Twitter? Aunque el código es generalmente impresionante, vimos la posibilidad de mejorarlo en el departamento de estética. Carbon hace que sea fácil crear y compartir bellas imágenes de tu código. ¿Entonces, qué esperas? Ve a impresionar a todos tus seguidores con tu nueva destreza de diseño.
 
 <p align="center">
   <img width="100%" alt="Carbon example" src="https://user-images.githubusercontent.com/8397708/63456416-b27d1a80-c403-11e9-9572-105b089be885.png">
@@ -41,9 +41,9 @@
 
 ## Características
 
-- **Personalización**. Personaliza cosas como el tema de sintaxis de tu imagen, el estilo de la ventana y más.
-- **Comparte rápidamente**. Guarde su imagen o twittee un enlace con un clic.
-- **Importar de GitHub gist**. Simplemente agregue un ID de GitHub gist a la url.
+- **Personalización**. Personaliza cosas como el tema de sintaxis de tu imagen, el estilo de fuente y más.
+- **Comparte rápidamente**. Guarda tu imagen o enlace con un solo click.
+- **Guardar Snippets**. Crea una cuenta para después guardar snippets. Los snippets compartidos se despliegan automáticamente en Twitter y Slack.
 
 ## Uso
 
@@ -57,15 +57,37 @@ Hay formas diferentes de importar código en Carbon:
 
 #### Personalización
 
-Una vez que tenga todo su código en Carbon, puede personalizar su imagen cambiando el tema de sintaxis, el color de fondo, el tema de la ventana o el relleno.
+Una vez que tengas todo tu código en Carbon, puedes personalizar tu imagen cambiando el tema de la sintaxis, estilo de la ventana, márgenes, sombras, fuentes y más.
 
 #### Exportar/Compartir
 
-Después de que hayas personalizado tu fragmento de código, puedes compartirlo en un Tweet haciendo un enlace a la imagen o guardar la imagen directamente.
+Después de que hayas personalizado tu imagen puedes compartir tu snippet de muchas formas.
 
-Si utilizas el botón de “Tweet”, Carbon hará que su imagen sea accesible automáticamente. Sin embargo, si desea “twittear” manualmente su imagen de Carbon, consulte [cómo publicar imágenes accesibles](https://help.twitter.com/es/using-twitter/picture-descriptions).
+##### Crear y guardar snippet
 
-Si tu incluyes una imagen de Carbon en una publicación, el código fuente será invisible para tecnologías de asistencia, no será posible ampliarlo, copiarlo, etc. Por favor, piense en agregar otro elemento de texto junto con el código fuente, como el [elemento HTML details](https://developer.mozilla.org/es/docs/Web/HTML/Elemento/details) debajo de la imagen.
+Compartir un snippet guardado desplegará automáticamente la imagen en plataformas como Twitter y Slack. Esto permite a los usuarios ver tu creación y al mismo tiempo les da acceso al código fuente a través del enlace. Mejor aún, si necesitas hacer una actualización puedes simplemente entrar al enlace y editar el snippet directamente.
+
+Para crear un snippet y guardarlo sigue los siguientes pasos:
+
+1. Inicia sesión usando el botón "Sign in/Sign up".
+2. Utiliza el editor cómo normalmente lo harías (Tu snippet se guardará automáticamente).
+3. Copia la URL desde tu navegador y compártela.
+
+##### Embeber un snippet
+
+Este es el método recomendado para compartir Carbon en tu propio sitio web o blog. Los usuarios podrán copiar el código con tan solo presionar un botón.
+
+Tu puedes embeber cualquier snippet de Carbon en tu sitio web directamente usando la URL `carbon.now.sh`. El "Copy Menu" te permitirá rápidamente copiar el código del iFrame correcto o la URL codificada para embebimiento en plataformas como Medium.
+
+Finalmente, podrás embeber un snippet guardado o GitHub gists usando `carbon.now.sh/embed/:id`.
+
+##### Usar el botón de Tweet
+
+El botón de Tweet no solo compartirá la imagen en Twitter, también codificará correctamente el texto `alt` para asegurarse de que tus imágenes son accesibles. Sin embargo, si tu quieres compartir la imágen por ti mismo consulta [cómo publicar imágenes accesibles](https://help.twitter.com/es/using-twitter/picture-descriptions).
+
+##### Descarga la imagen directamente
+
+Carbon permite descargar tu imagen como PNG y SVG. También puedes dar click en `Export → Open` para abrir tu imagen directamente en el navegador. Finalmente, puedes copiar la imagen Carbon directamente en tu portapapeles llendo a `Copy → Image`.
 
 #### Instalación de Carbon para escritorio (Sin conexión)
 
@@ -97,12 +119,11 @@ Echa un vistazo a estos proyectos que nuestra increíble comunidad ha creado:
 - [Carbonize](https://itunes.apple.com/us/app/carbonize/id1451177988) - Un contenedor macOS con características nativas extendidas.
 - [CodeExpander](https://codeexpander.com) - Un cliente inteligente GitHub gist con las características TextExpander.
 - [`nef`](https://github.com/bow-swift/nef#-exporting-carbon-code-snippets) - Exporte múltiples fragmentos de código de carbono desde `Xcode Playground`.
+- [`@carbonshbot`] - Un chatbot de Telegram que toma un snippet o gist URL y genera una imagen de Carbon.
+  iteratively manipulate image aesthetics in R and either open in Carbon or download directly.
+- [R `carbonate`] - Manipula iterativamente la estética de la imagen en `R` y permite abrirla en Carbon o descargarla directamente.
 
-##### Librerías
-
-- [R `carbonate`](https://yonicd.github.io/carbonate/) - Iterativamente manipule la estética de la imagen en `R` y abra en Carbon o descargue directamente.
-
-##### Libros de texto
+##### Citas
 
 - ["CS 101 - Una introducción al pensamiento computacional"](https://itunes.apple.com/us/book/id1435714196) - Un libro de texto de ciencias de la computación por Sarbo Roy.
 
@@ -272,4 +293,5 @@ Gracias a todas estas personas maravillosas ([emoji key](https://github.com/kent
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
